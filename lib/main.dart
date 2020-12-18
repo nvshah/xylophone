@@ -10,7 +10,8 @@ class XylophoneApp extends StatelessWidget {
     final player = AudioCache();
     player.play('note$soundNumber.wav');
   }
-
+  
+  ///build each slab to display different color plate
   Expanded buildKey({Color color, int soundNumber}) {
     return Expanded(
       child: FlatButton(
